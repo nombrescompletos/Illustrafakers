@@ -1,0 +1,265 @@
+/* FONDO GENERAL */
+body {
+    background-color: #E9D9B5;
+    color: #493F32;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    line-height: 1.6;
+}
+
+/* CABECERA */
+header {
+    background-color: #344F3B;
+    text-align: center;
+    padding: 35px 20px;
+    border-bottom: 5px solid #B58A4B;
+}
+
+h1 {
+    color: #FFF0D5;
+    font-size: 42px;
+    margin: 0;
+}
+
+header p {
+    color: #E9D9B5;
+    font-size: 17px;
+}
+
+/* CONTENIDO PRINCIPAL */
+main {
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+/* SECCIONES */
+section {
+    background-color: #FFF0D5;
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 15px;
+    border: 2px solid #D5C49A;
+}
+
+/* INTRODUCCION */
+#inicio {
+    background-color: #F5E8CE;
+    border: 3px solid #B58A4B;
+}
+
+/* PERSONAJES */
+#personajes {
+    border-left: 8px solid #526442;
+}
+
+/* EXPERIENCIA */
+#experiencia {
+    background-color: #F0EBD9;
+    border-left: 8px solid #87945A;
+}
+
+/* REFERENCIAS */
+#referencias {
+    background-color: #F5E5C9;
+    border-left: 8px solid #B58A4B;
+}
+
+/* TITULOS */
+h2 {
+    color: #344F3B;
+    font-size: 28px;
+}
+
+h3 {
+    color: #A6533F;
+    font-size: 21px;
+}
+
+/* IMAGENES */
+figure {
+    text-align: center;
+    margin: 20px 0;
+}
+
+img {
+    width: 280px;
+    height: 250px;
+    max-width: 100%;
+    object-fit: cover;
+    border-radius: 18px;
+}
+
+figcaption {
+    color: #776B5B;
+    font-size: 14px;
+    font-style: italic;
+    margin-top: 8px;
+}
+
+/* LISTAS */
+li {
+    margin-bottom: 10px;
+}
+
+/* ENLACES */
+a {
+    color: #526442;
+    font-weight: bold;
+}
+
+a:hover {
+    color: #A6533F;
+}
+
+/* PIE DE PAGINA */
+footer {
+    background-color: #263C30;
+    text-align: center;
+    padding: 20px;
+    color: #FFF0D5;
+    border-top: 5px solid #B58A4B;
+}
+
+/* DISEÑO PARA CELULARES */
+@media (max-width: 600px) {
+
+    h1 {
+        font-size: 32px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    section {
+        padding: 18px;
+    }
+
+    img {
+        height: 200px;
+    }
+}
+/* TITULO CON TRIFUERZAS */
+
+.titulo-canvas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.titulo-canvas canvas {
+    width: 120px;
+    height: 120px;
+}
+
+/* KOLOG AL LADO DE BIENVENIDA */
+
+.inicio-con-kolog {
+    position: relative;
+}
+
+#kolog {
+    position: absolute;
+    width: 190px;
+    height: 220px;
+    left: -155px;
+    top: 70px;
+    z-index: 2;
+}
+
+/* PARA CELULARES */
+
+@media (max-width: 600px) {
+    #kolog {
+        position: static;
+        display: block;
+        margin: 0 auto;
+    }
+}
+
+/* EXPERIENCIA MULTIMEDIA */
+
+#multimedia {
+    background-color: #F0EBD9;
+    border-left: 8px solid #87945A;
+}
+
+#multimedia audio {
+    width: 100%;
+    max-width: 450px;
+}
+
+#multimedia video {
+    max-width: 650px;
+    height: auto;
+    border-radius: 15px;
+    border: 3px solid #B58A4B;
+    background-color: #263C30;
+}
+
+/* FORMULARIO DE CONTACTO */
+
+#contacto {
+    background-color: #F5E8CE;
+    border-left: 8px solid #B58A4B;
+}
+
+#contacto form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+#contacto label {
+    font-weight: bold;
+    color: #344F3B;
+}
+
+#contacto input[type="text"],
+#contacto input[type="email"],
+#contacto select,
+#contacto textarea {
+    padding: 12px;
+    border: 2px solid #D5C49A;
+    border-radius: 8px;
+    background-color: #FFF0D5;
+    color: #493F32;
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+}
+
+#contacto input:focus,
+#contacto select:focus,
+#contacto textarea:focus {
+    outline: none;
+    border-color: #526442;
+}
+
+#contacto input[type="radio"] {
+    accent-color: #526442;
+}
+
+#contacto button {
+    background-color: #344F3B;
+    color: #FFF0D5;
+    padding: 13px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#contacto button:hover {
+    background-color: #526442;
+}
+
+.aviso-formulario {
+    font-size: 13px;
+    color: #776B5B;
+    font-style: italic;
+    margin-top: 15px;
+}
