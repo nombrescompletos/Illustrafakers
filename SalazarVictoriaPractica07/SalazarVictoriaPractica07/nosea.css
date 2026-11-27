@@ -1,0 +1,363 @@
+
+/* CONFIGURACIÓN GENERAL */
+
+body {
+    background: linear-gradient(
+        to bottom,
+        rgb(210, 31, 31),
+        rgb(194, 155, 0),
+        rgb(210, 31, 31)
+    );
+
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+
+/* TEXTOS EN TIMES NEW ROMAN */
+
+p, li, a {
+    font-family: "Times New Roman", serif;
+}
+
+
+/* ENCABEZADO */
+
+header {
+    background-color: #741e1e;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+h1 {
+    color: #ffffff;
+    font-size: 40px;
+    margin: 0;
+}
+
+header p {
+    color: #ffa9a9;
+}
+
+header img {
+    width: 250px;
+    max-width: 90%;
+    height: auto;
+    border-radius: 12px;
+    margin-top: 15px;
+}
+
+
+/* CONTENIDO PRINCIPAL */
+
+main {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+
+/* CUADRANTES DE LAS SECCIONES */
+
+section {
+    background-color: #462020;
+    padding: 25px;
+    margin-bottom: 20px;
+    border-radius: 14px;
+}
+
+section h2 {
+    color: #ffd06c;
+    text-align: center;
+}
+
+section h3 {
+    color: #ffd06c;
+}
+
+p {
+    color: #ffb151;
+    line-height: 1.6;
+}
+
+
+/* HISTORIA */
+
+.contenido-historia {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.contenido-historia img {
+    width: 500px;
+    max-width: 55%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.contenido-historia p {
+    flex: 1;
+}
+
+
+/* DATOS ALEATORIOS */
+
+.intereses-contenido {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+
+.intereses-contenido ul {
+    flex: 1;
+    color: #ffb151;
+    transform: translateY(-0.5cm);
+}
+
+.intereses-contenido img {
+    width: 400px;
+    max-width: 48%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+
+/* LISTAS */
+
+li {
+    color: #ffb151;
+    font-weight: normal;
+    line-height: 1.7;
+    margin-bottom: 10px;
+}
+
+li strong {
+    color: #ffd06c;
+    font-weight: bold;
+}
+
+
+/* AUDIO */
+
+.audio-contenido {
+    text-align: center;
+    margin-top: 25px;
+}
+
+audio {
+    max-width: 100%;
+}
+
+
+/* GIF Y VIDEO SUELTOS */
+
+.contenidoseparado {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    width: 100%;
+    margin: 30px auto;
+    padding: 0;
+    background: transparent;
+}
+
+.contenidoseparado img {
+    width: 350px;
+    max-width: 48%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.contenidoseparado video {
+    width: 350px;
+    max-width: 48%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+
+/* TRADICIONES */
+
+.tradiciones-contenido {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 25px;
+}
+
+.tradiciones-contenido ol {
+    flex: 1;
+    padding-left: 25px;
+}
+
+.tradiciones-contenido img {
+    width: 350px;
+    max-width: 45%;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+
+/* IMPERIO ROMANO */
+
+.imagen-romana {
+    display: block;
+    width: 70%;
+    max-width: 550px;
+    height: 300px;
+    object-fit: cover;
+    margin: 20px auto;
+    border-radius: 10px;
+}
+
+
+/* ENLACES */
+
+.enlace {
+    margin-top: 20px;
+}
+
+a {
+    color: #ffd06c;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+a:hover {
+    color: #ffffff;
+}
+
+
+/* PIE DE PÁGINA */
+
+footer {
+    background-color: #741e1e;
+    width: 100%;
+    padding: 20px 0;
+    text-align: center;
+    margin-top: 40px;
+}
+
+footer p {
+    color: #ffd06c;
+    margin: 5px;
+    font-size: 14px;
+}
+
+
+/* ADAPTACIÓN PARA PANTALLAS PEQUEÑAS */
+
+@media (max-width: 650px) {
+
+    h1 {
+        font-size: 30px;
+    }
+
+    .contenido-historia,
+    .intereses-contenido,
+    .contenidoseparado,
+    .tradiciones-contenido {
+        flex-direction: column;
+    }
+
+    .contenido-historia img,
+    .intereses-contenido img,
+    .contenidoseparado img,
+    .contenidoseparado video,
+    .tradiciones-contenido img {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .intereses-contenido ul {
+        transform: none;
+    }
+
+    .imagen-romana {
+        width: 100%;
+        height: auto;
+    }
+}
+
+/* ENCUESTA */
+
+.encuesta form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.encuesta label {
+    color: #ffb151;
+    font-family: "Times New Roman", serif;
+    margin-top: 8px;
+}
+
+.encuesta input[type="text"],
+.encuesta input[type="email"],
+.encuesta input[type="number"],
+.encuesta select {
+    padding: 12px;
+    border: 2px solid #b77a36;
+    border-radius: 8px;
+    background-color: #fff4df;
+    color: #462020;
+    font-family: "Times New Roman", serif;
+    font-size: 16px;
+}
+
+.encuesta fieldset {
+    border: 1px solid #ffd06c;
+    border-radius: 10px;
+    padding: 15px;
+    margin-top: 10px;
+}
+
+.encuesta legend {
+    color: #ffd06c;
+    font-family: "Times New Roman", serif;
+    font-weight: bold;
+    padding: 0 8px;
+}
+
+.encuesta input[type="radio"],
+.encuesta input[type="checkbox"] {
+    accent-color: #d49b43;
+    margin-right: 8px;
+}
+
+.encuesta textarea {
+    padding: 12px;
+    border: 2px solid #b77a36;
+    border-radius: 8px;
+    background-color: #fff4df;
+    color: #462020;
+    font-family: "Times New Roman", serif;
+    font-size: 16px;
+    resize: vertical;
+}
+
+.encuesta button {
+    background-color: #a52b25;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 14px;
+    font-size: 17px;
+    font-family: "Times New Roman", serif;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+.encuesta button:hover {
+    background-color: #d49b43;
+    color: #462020;
+}
